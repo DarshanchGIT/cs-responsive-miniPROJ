@@ -1,0 +1,143 @@
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.nav {
+  /* padding-top: 10vh; */
+  height: 8%;
+  /* width: 93%; */
+  /*   background-color: crimson; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 3vw;
+  margin-top: 0.5vh;
+  border: 2px solid #dadada;
+}
+
+.nav-sub {
+  display: flex;
+  align-items: center;
+  /*   justify-content:center; */
+  /*   background-color: yellow; */
+  gap: 4vw;
+}
+.nav h4 {
+  font-size: 1.5vw;
+  font-family: poppins;
+  /*   font-size: 2vw; */
+}
+.nav i {
+  font-size: 2vw;
+  flex-wrap: 800;
+  /*   display:flex; */
+  /*   align-items:center; */
+  /*   justify-content:center; */
+  display: none;
+}
+.logo {
+  font-weight: bold;
+  font-size: 4vw;
+  font-family: poppins;
+}
+
+/* CONTENT SECTION */
+.content {
+  /*   width: 100%; */
+  height: 92%;
+  /*   background-color: burlywood; */
+  border: 1px solid #dadada;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  /*   background-color: red; */
+  padding: 2vw 3vw;
+}
+.right {
+  width: 50%;
+  /*   background-color: blue; */
+}
+
+.nav,
+.content {
+  font-family: poppins;
+  /* width: %; */
+  /*   padding: 0vw 3vw; */
+  /* margin: 0 auto; Center align the elements */
+}
+
+.left h1 {
+  /*   padding-left:30px;
+  padding-right:30px; */
+  font-size: 6vh;
+  /*   color:#dadada */
+}
+.left span {
+  font-size: 7.2vh;
+  color: #f4a642;
+}
+.left p {
+  /*   padding: 1px 30px; */
+  padding-bottom: 2vh;
+  font-size: 2.3vh;
+}
+.btn {
+  /* padding */
+  background-color: #f4a642;
+  font-family: poppins;
+  font-weight: 550;
+  font-size: 30px;
+  height: 8vh;
+  width: 10vw;
+  border: 1.5px solid #dadada;
+  border-radius: 1vw;
+  /* padding-left:20px; */
+}
+
+/* Right portion we gonna have a image bro  */
+.right img {
+  /* padding: 3vw 3vh; */
+  width: 40vw;
+  /*   height: 50vh; */
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 500px) {
+  .content {
+    /* display: */
+    flex-direction: column;
+  }
+  .nav {
+    background-color: lightseagreen;
+    color: #ffff;
+    /*     padding - (first parameter -> top,bottom) (second parameter->left,right); */
+    padding: 0 5vw;
+  }
+  .logo {
+    font-size: 8vw;
+  }
+  .nav h4 {
+    display: none;
+  }
+  .nav i {
+    display: block;
+    font-size: 10vw;
+  }
+  .btn {
+    height: 8vh;
+    width: 25vw;
+  }
+  .right img {
+    width: 100vw;
+  }
+}
